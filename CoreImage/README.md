@@ -42,7 +42,7 @@ UIImage *newImage = [UIImage imageWithCGImage:cgimg scale:1.0 orientation:orient
 
 自己照着写了个OC版，如下：
 
-
+![效果](https://github.com/winfredzen/iOS-image/blob/master/CoreImage/images/filter_01.png)
 
 
 
