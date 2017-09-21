@@ -38,6 +38,10 @@ UIImage *newImage = [UIImage imageWithCGImage:cgimg scale:1.0 orientation:orient
 
 ### 内置滤镜
 
+可参考[iOS8 Core Image In Swift：自动改善图像以及内置滤镜的使用](http://blog.csdn.net/zhangao0086/article/details/39012231)
+
+自己照着写了个OC版，如下：
+
 
 
 
