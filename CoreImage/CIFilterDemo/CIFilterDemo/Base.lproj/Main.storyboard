@@ -109,6 +109,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yd0-JZ-Rvs">
+                                <rect key="frame" x="510" y="316" width="31" height="30"/>
+                                <color key="backgroundColor" red="0.32156862749999998" green="0.7725490196" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="模糊"/>
+                                <connections>
+                                    <action selector="photoEffectBlur:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fkC-aD-nNr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -128,6 +136,7 @@
                             <constraint firstItem="Gud-nM-W9a" firstAttribute="bottom" secondItem="Yy0-yg-aCO" secondAttribute="bottom" id="Nm3-7s-rhK"/>
                             <constraint firstItem="N3h-EY-nW5" firstAttribute="top" secondItem="myU-ny-UFH" secondAttribute="top" id="ONq-0q-rCu"/>
                             <constraint firstItem="Gud-nM-W9a" firstAttribute="leading" secondItem="Yy0-yg-aCO" secondAttribute="trailing" constant="20" id="Pvf-rX-Rpk"/>
+                            <constraint firstItem="yd0-JZ-Rvs" firstAttribute="leading" secondItem="N3h-EY-nW5" secondAttribute="trailing" constant="20" id="Q1m-Nl-4KL"/>
                             <constraint firstItem="ak4-1O-hXV" firstAttribute="leading" secondItem="Gud-nM-W9a" secondAttribute="trailing" constant="20" id="QZM-QS-IuV"/>
                             <constraint firstItem="g5d-1Z-WNv" firstAttribute="bottom" secondItem="1nO-4A-lFO" secondAttribute="bottom" id="UUW-OX-cWO"/>
                             <constraint firstItem="Gud-nM-W9a" firstAttribute="top" secondItem="Yy0-yg-aCO" secondAttribute="top" id="XxS-Dc-DeQ"/>
@@ -146,7 +155,9 @@
                             <constraint firstItem="Yy0-yg-aCO" firstAttribute="top" secondItem="g5d-1Z-WNv" secondAttribute="top" id="oRG-GI-5Ev"/>
                             <constraint firstItem="gxJ-Pd-bY8" firstAttribute="width" secondItem="lRe-Vs-lzU" secondAttribute="width" id="rkj-1a-mhS"/>
                             <constraint firstItem="1nO-4A-lFO" firstAttribute="leading" secondItem="S74-4f-mXo" secondAttribute="trailing" constant="20" id="ttG-qw-ofn"/>
+                            <constraint firstItem="yd0-JZ-Rvs" firstAttribute="bottom" secondItem="N3h-EY-nW5" secondAttribute="bottom" id="u0X-iO-ra8"/>
                             <constraint firstItem="COV-tU-mi1" firstAttribute="top" secondItem="lRe-Vs-lzU" secondAttribute="bottom" constant="20" id="z06-wt-Qzm"/>
+                            <constraint firstItem="yd0-JZ-Rvs" firstAttribute="top" secondItem="N3h-EY-nW5" secondAttribute="top" id="z1d-E2-PVT"/>
                         </constraints>
                     </view>
                     <connections>

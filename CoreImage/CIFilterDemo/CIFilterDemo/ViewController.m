@@ -28,6 +28,8 @@
 - (IBAction)photoEffectFade:(id)sender;
 - (IBAction)photoEffectProcess:(id)sender;
 - (IBAction)photoEffectChrome:(id)sender;
+- (IBAction)photoEffectBlur:(id)sender;
+
 
 
 @end
@@ -119,6 +121,14 @@
 - (IBAction)photoEffectChrome:(id)sender {
     self.textLabel.text = @"铬黄";
     self.filter = [CIFilter filterWithName:@"CIPhotoEffectChrome"];
+    [self showFilterImage];
+}
+
+//模糊
+- (IBAction)photoEffectBlur:(id)sender {
+    self.textLabel.text = @"模糊";
+    self.filter = [CIFilter filterWithName:@"CIMotionBlur"];
+    [self.filter setValue:@(10.f) forKey:@"inputRadius"];
     [self showFilterImage];
 }
 
