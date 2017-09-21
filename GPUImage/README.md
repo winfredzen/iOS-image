@@ -12,6 +12,8 @@ GPUImage同样可以用来实现各种各样的效果
 
 如下的分别是原图、应用`GPUImageGrayscaleFilter`后的效果、应用`GPUImageSepiaFilter`后的效果
 
+![原图](https://github.com/winfredzen/iOS-image/blob/master/GPUImage/images/image_01.png) ![GPUImageGrayscaleFilter](https://github.com/winfredzen/iOS-image/blob/master/GPUImage/images/image_02.png) ![GPUImageSepiaFilter](https://github.com/winfredzen/iOS-image/blob/master/GPUImage/images/image_03.png)
+
 
 
 
