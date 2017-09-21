@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IoT-1Y-Ffn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Wuv-eN-ur1"/>
+                                </constraints>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="g0H-Rh-yqd">
+                                <rect key="frame" x="18" y="340" width="339" height="31"/>
+                                <connections>
+                                    <action selector="amountSliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="xvg-zO-viv"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYH-2K-fp6">
+                                <rect key="frame" x="266" y="395" width="89" height="30"/>
+                                <state key="normal" title="Photo Album"/>
+                                <connections>
+                                    <action selector="loadPhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i2N-lE-j8I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slz-Ah-FUZ">
+                                <rect key="frame" x="274" y="445" width="81" height="30"/>
+                                <state key="normal" title="Save Album"/>
+                                <connections>
+                                    <action selector="savePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zRp-mc-2XY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="slz-Ah-FUZ" secondAttribute="trailing" constant="20" id="4aA-6V-pRr"/>
+                            <constraint firstItem="slz-Ah-FUZ" firstAttribute="top" secondItem="ZYH-2K-fp6" secondAttribute="bottom" constant="20" id="JET-gV-rK2"/>
+                            <constraint firstItem="IoT-1Y-Ffn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Jjo-T2-w5V"/>
+                            <constraint firstItem="ZYH-2K-fp6" firstAttribute="top" secondItem="g0H-Rh-yqd" secondAttribute="bottom" constant="25" id="KA7-VG-evW"/>
+                            <constraint firstAttribute="trailing" secondItem="g0H-Rh-yqd" secondAttribute="trailing" constant="20" id="PuN-Tp-jsb"/>
+                            <constraint firstItem="g0H-Rh-yqd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="YGu-i8-yf7"/>
+                            <constraint firstItem="g0H-Rh-yqd" firstAttribute="top" secondItem="IoT-1Y-Ffn" secondAttribute="bottom" constant="40" id="aE8-8w-3Mo"/>
+                            <constraint firstAttribute="trailing" secondItem="ZYH-2K-fp6" secondAttribute="trailing" constant="20" id="dyy-32-LMD"/>
+                            <constraint firstItem="g0H-Rh-yqd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qjJ-4s-vb8"/>
+                            <constraint firstAttribute="trailing" secondItem="IoT-1Y-Ffn" secondAttribute="trailing" id="tI0-Oz-6wv"/>
+                            <constraint firstItem="IoT-1Y-Ffn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zf1-ey-bNS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="amountSlider" destination="g0H-Rh-yqd" id="Pui-hV-Md9"/>
+                        <outlet property="imageView" destination="IoT-1Y-Ffn" id="4GL-NU-B3o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-108" y="54.422788605697157"/>
+        </scene>
+    </scenes>
+</document>
