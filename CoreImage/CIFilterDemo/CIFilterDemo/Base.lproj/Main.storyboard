@@ -103,6 +103,12 @@
                                     <action selector="photoEffectChrome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XFC-el-lq1"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylk-xC-Fi2">
+                                <rect key="frame" x="333" y="187.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -117,6 +123,7 @@
                             <constraint firstItem="S74-4f-mXo" firstAttribute="top" secondItem="COV-tU-mi1" secondAttribute="top" id="EMp-yK-32n"/>
                             <constraint firstItem="S74-4f-mXo" firstAttribute="bottom" secondItem="COV-tU-mi1" secondAttribute="bottom" id="F9D-Y7-82I"/>
                             <constraint firstItem="gxJ-Pd-bY8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="I6N-Mx-at9"/>
+                            <constraint firstItem="ylk-xC-Fi2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JvW-dY-KvG"/>
                             <constraint firstItem="Yy0-yg-aCO" firstAttribute="bottom" secondItem="g5d-1Z-WNv" secondAttribute="bottom" id="KEl-Q3-wvP"/>
                             <constraint firstItem="Gud-nM-W9a" firstAttribute="bottom" secondItem="Yy0-yg-aCO" secondAttribute="bottom" id="Nm3-7s-rhK"/>
                             <constraint firstItem="N3h-EY-nW5" firstAttribute="top" secondItem="myU-ny-UFH" secondAttribute="top" id="ONq-0q-rCu"/>
@@ -127,6 +134,7 @@
                             <constraint firstItem="Gud-nM-W9a" firstAttribute="leading" secondItem="Yy0-yg-aCO" secondAttribute="trailing" constant="20" id="YW3-BN-PqZ"/>
                             <constraint firstItem="lRe-Vs-lzU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="ch2-SM-bTQ"/>
                             <constraint firstItem="lRe-Vs-lzU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="cuy-Jn-kYF"/>
+                            <constraint firstItem="ylk-xC-Fi2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gNA-cy-PJI"/>
                             <constraint firstItem="myU-ny-UFH" firstAttribute="bottom" secondItem="ak4-1O-hXV" secondAttribute="bottom" id="jfy-kw-1aL"/>
                             <constraint firstItem="S74-4f-mXo" firstAttribute="leading" secondItem="COV-tU-mi1" secondAttribute="trailing" constant="20" id="jku-1l-xc7"/>
                             <constraint firstItem="g5d-1Z-WNv" firstAttribute="leading" secondItem="1nO-4A-lFO" secondAttribute="trailing" constant="20" id="kUh-I6-BA9"/>
@@ -144,11 +152,12 @@
                     <connections>
                         <outlet property="filterImageView" destination="gxJ-Pd-bY8" id="0QY-x7-GVb"/>
                         <outlet property="orginalImageView" destination="lRe-Vs-lzU" id="Sig-34-vfO"/>
+                        <outlet property="textLabel" destination="ylk-xC-Fi2" id="4ac-FH-pcr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7" y="1"/>
+            <point key="canvasLocation" x="-202" y="60"/>
         </scene>
     </scenes>
     <resources>

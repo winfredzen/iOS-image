@@ -13,6 +13,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *orginalImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *filterImageView;
+@property (weak, nonatomic) IBOutlet UILabel *textLabel;
 
 @property (strong, nonatomic) UIImage *originalImage;
 @property (strong, nonatomic) CIContext *context;
@@ -49,6 +50,9 @@
 
 //自动改善
 - (IBAction)autoAdjust:(id)sender {
+    
+    self.textLabel.text = @"自动改善";
+    
     CIImage *inputImage = [CIImage imageWithCGImage:self.originalImage.CGImage];
     NSArray *filters =  inputImage.autoAdjustmentFilters;
     for (CIFilter *filter in filters) {
@@ -64,48 +68,56 @@
 
 //怀旧
 - (IBAction)photoEffectInstant:(id)sender {
+    self.textLabel.text = @"怀旧";
     self.filter = [CIFilter filterWithName:@"CIPhotoEffectInstant"];
     [self showFilterImage];
 }
 
 //黑白
 - (IBAction)photoEffectNoir:(id)sender {
+    self.textLabel.text = @"黑白";
     self.filter = [CIFilter filterWithName:@"CIPhotoEffectNoir"];
     [self showFilterImage];
 }
 
 //色调
 - (IBAction)photoEffectTonal:(id)sender {
+    self.textLabel.text = @"色调";
     self.filter = [CIFilter filterWithName:@"CIPhotoEffectTonal"];
     [self showFilterImage];
 }
 
 //岁月
 - (IBAction)photoEffectTransfer:(id)sender {
+    self.textLabel.text = @"岁月";
     self.filter = [CIFilter filterWithName:@"CIPhotoEffectTransfer"];
     [self showFilterImage];
 }
 
 //单色
 - (IBAction)photoEffectMono:(id)sender {
+    self.textLabel.text = @"单色";
     self.filter = [CIFilter filterWithName:@"CIPhotoEffectMono"];
     [self showFilterImage];
 }
 
 //褪色
 - (IBAction)photoEffectFade:(id)sender {
+    self.textLabel.text = @"褪色";
     self.filter = [CIFilter filterWithName:@"CIPhotoEffectFade"];
     [self showFilterImage];
 }
 
 //冲印
 - (IBAction)photoEffectProcess:(id)sender {
+    self.textLabel.text = @"冲印";
     self.filter = [CIFilter filterWithName:@"CIPhotoEffectProcess"];
     [self showFilterImage];
 }
 
 //铬黄
 - (IBAction)photoEffectChrome:(id)sender {
+    self.textLabel.text = @"铬黄";
     self.filter = [CIFilter filterWithName:@"CIPhotoEffectChrome"];
     [self showFilterImage];
 }
