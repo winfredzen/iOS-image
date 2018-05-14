@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uV7-Qi-e5X">
+                                <rect key="frame" x="20" y="40" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="awY-gL-8Ur"/>
+                                    <constraint firstAttribute="height" constant="150" id="rup-b6-1P2"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3ek-gw-pdT">
+                                <rect key="frame" x="205" y="40" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="G6g-to-tHd"/>
+                                    <constraint firstAttribute="height" constant="150" id="Tmr-4X-exX"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f1t-SD-NHj" customClass="DrawingView">
+                                <rect key="frame" x="20" y="210" width="335" height="437"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uV7-Qi-e5X" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="AdD-nT-GTu"/>
+                            <constraint firstItem="f1t-SD-NHj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="DM2-qN-2fL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f1t-SD-NHj" secondAttribute="trailing" constant="20" id="Rd8-4b-54Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="f1t-SD-NHj" secondAttribute="bottom" constant="20" id="Wxm-Te-ULe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3ek-gw-pdT" secondAttribute="trailing" constant="20" id="ZwJ-lH-FCo"/>
+                            <constraint firstItem="f1t-SD-NHj" firstAttribute="top" secondItem="uV7-Qi-e5X" secondAttribute="bottom" constant="20" id="g6Y-Iy-Xsn"/>
+                            <constraint firstItem="3ek-gw-pdT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="jls-xS-AhZ"/>
+                            <constraint firstItem="uV7-Qi-e5X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ow8-BP-EWu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="drawingView" destination="f1t-SD-NHj" id="hxt-OF-aBi"/>
+                        <outlet property="imageView1" destination="uV7-Qi-e5X" id="vDV-Lg-lAa"/>
+                        <outlet property="imageView2" destination="3ek-gw-pdT" id="TTX-4i-Opw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
